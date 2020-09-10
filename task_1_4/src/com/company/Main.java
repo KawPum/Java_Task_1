@@ -6,7 +6,18 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static int Factorial(int number){
+        /*if (number>1) return number* Factorial(number-1);
+        else return 1;*/
+        int result = 1;
+        for (int n = number;n>1;n--){
+            result*=n;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
+        /* Пункт 7: создание массива рандомных чисел и его сортировка
         ArrayList<Integer> arr = new ArrayList<Integer>();
         Random random = new Random();
         int n;
@@ -16,8 +27,9 @@ public class Main {
         for (int i = 0; i < n ; i++){
             //arr.add((int)(Math.random()*100));
             arr.add(random.nextInt(100));
-            //System.out.println(arr.get(i));
+            System.out.print(arr.get(i) + " ");
         }
+        System.out.print("\n");
 
         for (;n>=1;n--){
             for(int i = 0; i<n-1;i++)
@@ -31,7 +43,11 @@ public class Main {
         }
 
         for (int i = 0; i < arr.size() ; i++){
-            System.out.println(arr.get(i));
-        }
+            System.out.print(arr.get(i) + " ");
+        }*/
+
+        System.out.println(Factorial(5));
     }
+
+
 }
